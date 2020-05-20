@@ -1,0 +1,232 @@
+/*通用样式*/
+body{
+    background-color: lightgray;
+}
+/*页头*/
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: #343a40!important;
+}
+.header .title{
+    float: left;
+    color: white;
+    width: 300px;
+    height: 100%;
+    font-size: x-large;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 60px;
+    align-content: center;
+}
+.header .title a{
+    color: white;
+}
+.header .title a:focus{
+    text-decoration: none;
+}
+.header .title a:hover{
+    color: wheat;
+    text-decoration: none;
+}
+.header .navbar{
+    font-size: x-large;
+    padding: 0 20px;
+    float: left;
+}
+.header .navbar .nav a{
+    color: whitesmoke;
+}
+.header .navbar .nav li.active a{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid whitesmoke;
+    color:wheat;
+}
+.header .navbar .nav-tabs > li > a:hover{
+    background-color: transparent;
+    border:none;
+}
+.header .navbar .nav-tabs{
+    border:none
+}
+.header .datetime_input1{
+    padding-top: 14px;
+    padding-left: 100px;
+    width: 400px;
+    /*align-content: center;*/
+}
+/*主体样式*/
+/*mapbox*/
+#page-content-wrapper{
+    position: relative;
+}
+#page-content-wrapper .maps{
+    position: absolute;
+    display: block;
+    top: 0px;
+}
+#page-content-wrapper .maps .mapbox_place{
+    width: 1320px;
+    height:1020px;
+    float: left;
+    position: absolute;
+}
+#page-content-wrapper .maps .otherchart{
+    width: 600px;
+    height: 1020px;
+    float: left;
+    margin-left: 1320px;
+}
+#page-content-wrapper .maps .otherchart .thdearth{
+    width: 600px;
+    height: 400px;
+}
+#page-content-wrapper .maps .otherchart .simple1{
+    width: 600px;
+    height: 310px;
+}
+#page-content-wrapper .maps .otherchart .simple2{
+    width: 600px;
+    height: 310px;
+}
+/*kepler*/
+.keplerwrapper{
+    height: 1020px;
+    width: 1920px;
+}
+/*analysis*/
+#analysis .anawrapper{
+    width: 1920px;
+    height: 1020px;
+    position: relative;
+}
+#analysis .anawrapper .content_wrapper{
+    height: inherit;
+}
+#analysis .anawrapper .content_wrapper #chart_relation{
+    width: 920px;
+    height: 1020px;
+    float: left;
+    position: absolute;
+}
+#analysis .anawrapper .content_wrapper .other_charts{
+    width: 1000px;
+    height: 1020px;
+    float: left;
+    margin-left: 920px;
+    position: absolute;
+}
+#analysis .anawrapper .content_wrapper .other_charts .row1 {
+    height: 510px;
+}
+#analysis .anawrapper .content_wrapper .other_charts .row1 #anachart1{
+    height: 510px;
+    width: 500px;
+    float: left;
+}
+#analysis .anawrapper .content_wrapper .other_charts .row1 #anachart2{
+    height: 510px;
+    width: 500px;
+    float: left;
+}
+#analysis .anawrapper .content_wrapper .other_charts .row2 #anachart3{
+    height: 510px;
+    width: 500px;
+    float: left;
+}
+#analysis .anawrapper .content_wrapper .other_charts .row2 #anachart4{
+    height: 510px;
+    width: 500px;
+    float: left;
+}
+.header .datetime_input1 .btn1{
+    height: 26px;
+    line-height: 6px;
+}
+.sidebarwrapper .navbar .li #features a{
+    color: black;
+}
+/*mapbox*/
+#map canvas {
+    cursor: crosshair;
+    }
+    #menu {
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 700px;
+    border-radius: 3px;
+    width: 120px;
+    border: 1px solid rgba(0,0,0,0.4);
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    #menu a {
+    font-size: 13px;
+    color: #404040;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: center;
+    }
+    
+    #menu a:last-child {
+    border: none;
+    }
+    
+    #menu a:hover {
+    background-color: #f8f8f8;
+    color: #404040;
+    }
+    
+    #menu a.active {
+    background-color: #3887be;
+    color: #ffffff;
+    }
+    
+    #menu a.active:hover {
+    background: #3074a4;
+    }
+    #features {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.8);
+    }
+/*checkbox*/
+.sidebar-nav li .chrow_left{
+    width: 110px;
+    float: left;
+    padding-left: 10px;
+}
+.sidebar-nav li .chrow_right{
+    width: 110px;
+    float: right;
+    padding-right: 5px;
+}
+/* 背景图（可删除）*/
+/* .mapbox_place{
+    background-image: url("../imgs/GDELT/mapbox.png");
+}
+.thdearth{
+    background-image: url("../imgs/GDELT/3d_earth.png");
+}
+.simple1,.simple2{
+    background-image: url("../imgs/GDELT/simplecharts.png");
+}
+.keplerwrapper{
+    background-image: url("../imgs/GDELT/kepler.png");
+}*/
+#chart_relation{
+    background-image: url("../imgs/GDELT/relation.png");
+}
+#anachart1,#anachart2,#anachart3,#anachart4{
+    background-image: url("../imgs/GDELT/charts.png");
+} 
