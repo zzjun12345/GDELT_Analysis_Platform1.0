@@ -351,8 +351,8 @@ var url2='http://localhost:8080/geoserver/Gdelt/ows?service=WFS&version=1.0.0&re
            
        }
        $.ajax({
-        //url:url2+"'"+time[0]+time[1]+time[2]+"'",
-        url:'features.json',
+        url:url2+"'"+time[0]+time[1]+time[2]+"'",
+        //url:'features.json',
         type: "GET",
         dataType: "json", 
         success:function(data){
@@ -680,30 +680,30 @@ var url2='http://localhost:8080/geoserver/Gdelt/ows?service=WFS&version=1.0.0&re
           var earth_map = echarts.init(document.getElementById('earth_map'));
           var earth_data=[]
           for(var i=0;i<data.numberReturned;i++){
-            if(jQuery.isEmptyObject(data.features[i].properties.actor1geo_location)||jQuery.isEmptyObject(data.features[i].properties.actor2geo_location)){console.log(i)}
+            if(jQuery.isEmptyObject(data.features[i].properties.actor1geo_location)||jQuery.isEmptyObject(data.features[i].properties.actor2geo_location)){}
             else{
                 if(data.features[i].properties.quadclass==1){
                     earth_data.push({
                             coords:[data.features[i].properties.actor1geo_location.coordinates,data.features[i].properties.actor2geo_location.coordinates],
-                            lineStyle:{color:'rgb(50, 50, 150)',opacity: 0.05}
+                            lineStyle:{color:'rgb(50, 50, 150)',opacity: 0.01}
                         })
                 }
                 if(data.features[i].properties.quadclass==2){
                     earth_data.push({
                             coords:[data.features[i].properties.actor1geo_location.coordinates,data.features[i].properties.actor2geo_location.coordinates],
-                            lineStyle:{color:'rgb(0, 0, 255)',opacity: 0.08}
+                            lineStyle:{color:'rgb(0, 0, 255)',opacity: 0.04}
                         })
                 }
                 if(data.features[i].properties.quadclass==3){
                     earth_data.push({
                             coords:[data.features[i].properties.actor1geo_location.coordinates,data.features[i].properties.actor2geo_location.coordinates],
-                            lineStyle:{color:'rgb(255, 165, 0)',opacity: 0.01}
+                            lineStyle:{color:'rgb(255, 165, 0)',opacity: 0.005}
                         })
                 }
                 else{
                     earth_data.push({
                             coords:[data.features[i].properties.actor1geo_location.coordinates,data.features[i].properties.actor2geo_location.coordinates],
-                            lineStyle:{color:'rgb(255, 0, 0)',opacity: 0.01}
+                            lineStyle:{color:'rgb(255, 0, 0)',opacity: 0.005}
                         })
                 }
             }
@@ -740,7 +740,7 @@ var url2='http://localhost:8080/geoserver/Gdelt/ows?service=WFS&version=1.0.0&re
             effect: {
                 show: true,
                 trailWidth: 1,
-                trailOpacity: 0.5,
+                trailOpacity: 0.05,
                 trailLength: 0.2,
                 constantSpeed: 20
             },
