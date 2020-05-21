@@ -84,11 +84,17 @@ body{
 }
 #page-content-wrapper .maps .otherchart .simple1{
     width: 600px;
-    height: 310px;
+    height: 300px;
 }
 #page-content-wrapper .maps .otherchart .simple2{
     width: 600px;
-    height: 310px;
+    height: 300px;
+}
+#page-content-wrapper .maps .otherchart .txt{
+    width: 600px;
+    height: 20px;
+    bottom: 0;
+    text-align: center;
 }
 /*kepler*/
 .keplerwrapper{
