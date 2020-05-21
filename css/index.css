@@ -2,10 +2,13 @@
 body{
     background-color: lightgray;
 }
+html {
+    overflow: auto;
+    }
 /*页头*/
 .header{
     height: 60px;
-    width: 100%;
+    width: 1920px;
     background-color: #343a40!important;
 }
 .header .title{
