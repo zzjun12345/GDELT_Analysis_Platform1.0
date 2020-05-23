@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+    <script src="echarts.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        var dateid=['20200325','20200326','20200327','20200328','20200329','20200330','20200331','20200401','20200402','20200403','20200404','20200405','20200406','20200407','20200408','20200409','20200410','20200411','20200412','20200413','20200414','20200415','20200416','20200417','20200418','20200419','20200420','20200421','20200422','20200423'];
+        
+        var date = [];
+        var typ = [];
+        var number = [];
+        function getList(dateid) {
+            numberList=[];
+            for(var i=0;i<date.length;i++)
+            {
+                if(date[i]==dateid)
+                {
+                    if(typ[i]=='severely negative') numberList[0]=number[i];
+                    if(typ[i]=='negative') numberList[1]=number[i];
+                    if(typ[i]=='neutral') numberList[2]=number[i];
+                    if(typ[i]=='positive') numberList[3]=number[i];
+                    if(typ[i]=='extremely positive') numberList[4]=number[i];
+                }
+            }
+            return numberList;
+        }
+        $.ajax({
+            async:false,
+            url: "attitude.json",//json文件位置，文件名
+            type: "GET",//请求方式为get
+            dataType: "json", //返回数据格式为json
+            // traditional:true,
+            success: function(data) {//请求成功完成后要执行的方法 
+                for(var i=0;i<data.length;i++){
+                    date[i]=data[i].date;
+                    typ[i]=data[i].type;
+                    number[i]=data[i].number;
+                }
+                
+            }
+        })
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app={};
+        option = null;
+        var options=[];
+        dateid.forEach(date=>{
+            options.push(
+                {series:[{data:getList(date)}]}
+            )
+        })
+        console.log(options)
+        option = {
+            baseOption:{
+                timeline: {
+                    axisType: 'category',
+                    // realtime: false,
+                    // loop: false,
+                    autoPlay: true,
+                    // currentIndex: 2,
+                    playInterval: 1000,
+                    // controlStyle: {
+                    //     position: 'left'
+                    // },
+                    data: ['0325','0326','0327','0328','0329','0330','0331','0401','0402','0403','0404','0405','0406','0407','0408','0409','0410','0411','0412','0413','0414','0415','0416','0417','0418','0419','0420','0421','0422','0423'],
+                    label: {
+                        formatter : function(s) {
+                            return (new Date(s)).getFullYear();
+                        }
+                    }
+                },
+                color: ['#3398DB'],
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                        type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '10%',
+                    containLabel: true
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: ['非常消极','消极','中性','积极','非常积极'],
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value'
+                    }
+                ],
+                series: [
+                    {
+                        name: 'number',
+                        type: 'bar',
+                        barWidth: '60%'
+                    }
+                ]
+            },
+            
+            options: options
+        };
+        
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+       </script>
+   </body>
+</html>
