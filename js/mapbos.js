@@ -28,12 +28,19 @@ $('[data-toggle="offcanvas"]').click(function () {
 $("#ex1").slider({});
 $("#ex2").slider({});
 mapboxgl.accessToken = 'pk.eyJ1IjoiNzkwNDM2OTg2IiwiYSI6ImNrOGZiazd4eDAybjAzaHBuam5odms1ZzIifQ.l-zPukDWushMf1l5M0xDLg';
-/*var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/dark-v9',
-center: [31.4606, 20.7927],
-zoom: 0.5
-});*/
+var content;
+$.ajax({
+    url:'json/content.json',
+    type: "GET",
+    dataType: "json", 
+    success:function(data){
+        content=data
+        for(var i=1;i<=data.length;i++){
+            var txt='<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio'+i+'"'+' value='+data[i-1]['name']+'><label class="form-check-label" for="inlineRadio'+i+'">'+data[i-1]['name']+'</label></div>'
+            $("#content").append(txt) 
+        }
+    }
+})
 $('#datetimepicker').datetimepicker({
     format: 'yyyy-mm-dd',
     autoclose:true,//自动关闭
@@ -353,7 +360,7 @@ var url2='http://localhost:8080/geoserver/Gdelt/ows?service=WFS&version=1.0.0&re
        $.mask_fullscreen()
        $.ajax({
         url:url2+"'"+time[0]+time[1]+time[2]+"'",
-        //url:'features.json',
+        //url:'json/features.json',
         type: "GET",
         dataType: "json", 
         success:function(data){
@@ -1159,6 +1166,15 @@ function filter2(){
     filter.push(['<=','goldsteinscale',num2])
     filter.push(['>=','avgtone',num3])
     filter.push(['<=','avgtone',num4])
+    for (var i=1;i<=content.length;i++){
+        var id='inlineRadio'+i;
+        var state=$("#"+id).is(':checked')
+        if(state==true){
+            filter.push(content[i-1]['filter'])
+            console.log(content[i-1]['filter'])
+            break
+        }
+    }
     var fc=['any']
     for (var i=1;i<=num;i++){
         var self=$("#self"+i).val()

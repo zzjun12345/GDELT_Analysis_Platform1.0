@@ -1,0 +1,26 @@
+[
+    {"name":"一带一路",
+    "filter":["all",["in","actor1countrycode","CHN","MNG","SGP","MYS","IDN","MMR","THA","LAO","KHM","VNM",
+        "BRN","PHL","IRN","IRQ","TUR","SYR","JOR","LBN","ISR","PLE","SAU","YEM","OMN","UAE","QAT","KWT",
+        "BHR","GRC","CYP","EGY","IND","PAK","BGD","AFG","LKA","MDV","NPL","BTN","KAZ","UZB","TKM","TJK",
+        "KGZ","RUS","UKR","BLR","GEO","AZE","ARM","MDA","POL","LTU","EST","LVA","CZE","SVK","HUN","SVN",
+        "HRV","BIH","MNT","SER","ALB","ROM","BGR","MKD"],["in","actor2countrycode","CHN","MNG","SGP","MYS","IDN","MMR","THA","LAO","KHM","VNM",
+            "BRN","PHL","IRN","IRQ","TUR","SYR","JOR","LBN","ISR","PLE","SAU","YEM","OMN","UAE","QAT","KWT",
+            "BHR","GRC","CYP","EGY","IND","PAK","BGD","AFG","LKA","MDV","NPL","BTN","KAZ","UZB","TKM","TJK",
+            "KGZ","RUS","UKR","BLR","GEO","AZE","ARM","MDA","POL","LTU","EST","LVA","CZE","SVK","HUN","SVN",
+            "HRV","BIH","MNT","SER","ALB","ROM","BGR","MKD"]]},
+    {"name":"中美关系",
+        "filter":["all",["in","actor1countrycode","CHN","USA"],["in","actor2countrycode","CHN","USA"]]},
+    {
+     "name":"宗教事件",
+     "filter":["any",["!in","actor1religion1code","NaN"],["!in","actor2religion1code","NaN"]]
+    },
+    {
+        "name":"中东问题",
+        "filter":["any",["in","actor1countrycode","IRN","IRQ","LBN","PSE","SAU","SYR","ISR","EGY","JOR","KWT","YEM","ARE"],["in","actor1countrycode","IRN","IRQ","LBN","PSE","SAU","SYR","ISR","EGY","JOR","KWT","YEM","ARE"]]
+    },
+    {
+        "name":"恐怖/反叛组织",
+        "filter":["any",["in","actor1code","INS","OPP","REB","SEP","CRM","USAOPP","USACRM"]]
+    }
+]
