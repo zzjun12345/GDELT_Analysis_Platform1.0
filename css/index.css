@@ -220,19 +220,7 @@ html {
     float: right;
     padding-right: 5px;
 }
-/* 背景图（可删除）*/
-/* .mapbox_place{
-    background-image: url("../imgs/GDELT/mapbox.png");
-}
-.thdearth{
-    background-image: url("../imgs/GDELT/3d_earth.png");
-}
-.simple1,.simple2{
-    background-image: url("../imgs/GDELT/simplecharts.png");
-}
-.keplerwrapper{
-    background-image: url("../imgs/GDELT/kepler.png");
-}*/
+
 #chart_relation{
     background-image: url("../imgs/GDELT/relation.png");
 }
