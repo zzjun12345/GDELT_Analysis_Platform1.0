@@ -234,21 +234,8 @@ html {
     background-image: url("../imgs/GDELT/kepler.png");
 }*/
 #chart_relation{
-    /* background-image: url("../imgs/GDELT/relation.png"); */
-    background-color: #555555;
+    background-image: url("../imgs/GDELT/relation.png");
 }
-#anachart1{
-    background-color: #ddd;
-}
-#anachart2,#anachart3,#anachart4{
+#anachart1,#anachart2,#anachart3,#anachart4{
     background-image: url("../imgs/GDELT/charts.png");
 } 
-
-#attitudechart{
-    height:500px;
-    width:550px
-}
-#gexfgraph{
-    height:1000px;
-    width:920px
-}
