@@ -364,6 +364,8 @@ var url2='http://localhost:8080/geoserver/Gdelt/ows?service=WFS&version=1.0.0&re
         type: "GET",
         dataType: "json", 
         success:function(data){
+            var obj=document.getElementById("txt");
+            obj.innerHTML(time[0]+time[1]+time[2]);
             $.mask_close_all();
             var canvas = map.getCanvasContainer();
  

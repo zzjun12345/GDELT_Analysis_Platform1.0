@@ -141,7 +141,7 @@ html {
 }
 #analysis .anawrapper .content_wrapper .other_charts .row2 #anachart3{
     height: 510px;
-    width: 500px;
+    width: 1000px;
     float: left;
 }
 #analysis .anawrapper .content_wrapper .other_charts .row2 #anachart4{
@@ -220,17 +220,12 @@ html {
     float: right;
     padding-right: 5px;
 }
-
-#chart_relation{
-    /* background-image: url("../imgs/GDELT/relation.png"); */
-    /* background-color: #555555; */
-}
-#anachart1{
+/* #anachart1{
     background-color: #ddd;
-}
-#anachart2,#anachart3,#anachart4{
+} */
+/* #anachart2,#anachart3,#anachart4{
     background-image: url("../imgs/GDELT/charts.png");
-} 
+}  */
 
 #attitudechart{
     height:500px;
