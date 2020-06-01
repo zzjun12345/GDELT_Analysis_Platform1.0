@@ -141,7 +141,7 @@ html {
 }
 #analysis .anawrapper .content_wrapper .other_charts .row2 #anachart3{
     height: 510px;
-    width: 500px;
+    width: 1000px;
     float: left;
 }
 #analysis .anawrapper .content_wrapper .other_charts .row2 #anachart4{
@@ -209,6 +209,15 @@ html {
     overflow: auto;
     background: rgba(255, 255, 255, 0.8);
     }
+    #map #showdatetime{
+        color: white;
+        position: absolute;
+        z-index: 999;
+        margin-top: 60px;
+        margin-left: 60px;
+        font-size: x-large;
+        font-weight: 700;
+    }
 /*checkbox*/
 .sidebar-nav li .chrow_left{
     width: 110px;
@@ -220,29 +229,12 @@ html {
     float: right;
     padding-right: 5px;
 }
-/* 背景图（可删除）*/
-/* .mapbox_place{
-    background-image: url("../imgs/GDELT/mapbox.png");
-}
-.thdearth{
-    background-image: url("../imgs/GDELT/3d_earth.png");
-}
-.simple1,.simple2{
-    background-image: url("../imgs/GDELT/simplecharts.png");
-}
-.keplerwrapper{
-    background-image: url("../imgs/GDELT/kepler.png");
-}*/
-#chart_relation{
-    /* background-image: url("../imgs/GDELT/relation.png"); */
-    background-color: #555555;
-}
-#anachart1{
+/* #anachart1{
     background-color: #ddd;
-}
-#anachart2,#anachart3,#anachart4{
+} */
+/* #anachart2,#anachart3,#anachart4{
     background-image: url("../imgs/GDELT/charts.png");
-} 
+}  */
 
 #attitudechart{
     height:500px;

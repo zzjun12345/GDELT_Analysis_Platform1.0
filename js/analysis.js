@@ -135,7 +135,7 @@ for(i=0;i<date.length;i++){
         inf++;
     }
 }
-alert(tdnumber[inf-1]);
+// alert(tdnumber[inf-1]);
 option = {
 title: {
     text: 'GDELT单日事件态度统计',

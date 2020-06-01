@@ -12,7 +12,7 @@
   	align-items: center;
     -webkit-justify-content: center;
 	  justify-content: center;
-	  z-index: 99999;
+	  z-index: 9999;
 }
 .mask>div{
 	border: 1px solid #D0D0D0;
