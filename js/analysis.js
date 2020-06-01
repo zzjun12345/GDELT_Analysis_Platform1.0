@@ -21,13 +21,40 @@ $.ajax({
     //    alert(number[5]);
     }
 })
+
+var day1=[]
+var country=[]
+var num=[]
+var index1=[]
+$.ajax({
+    async:false,
+    url: "json/countryindex.json",//json文件位置，文件名
+    type: "GET",//请求方式为get
+    dataType: "json", //返回数据格式为json
+    // traditional:true,
+    success: function(data) {//请求成功完成后要执行的方法 
+       //给info赋值给定义好的变量
+       var pageData=data;
+       for(var i=0;i<data.length;i++){
+    	   console.log(pageData[i].name);
+       }
+       for(var i=0;i<data.length;i++){
+           day1[i]=data[i].date;
+           country[i]=data[i].country;
+           num[i]=data[i].num;
+           index1[i]=data[i].avgindex;
+       }
+    //    alert(number[5]);
+    }
+})
+
 function newrelation(){
 var myChart2=echarts.init(document.getElementById('gexfgraph'));
 myChart2.showLoading();
 var rtime=document.getElementById("rdate");
 var sindex=rtime.selectedIndex;
 var rdate=rtime.options[sindex].value;//得到日期
-var graphname='gexf/'+rdate+'gexf.gexf';
+var graphname='gexf/2020'+rdate+'gexf.gexf';
 $.get(graphname, function (xml) {
     myChart2.hideLoading();
     var graph = echarts.dataTool.gexf.parse(xml);
@@ -180,3 +207,57 @@ option.series[0].data[i]={value:tdnumber[i],name:tdtype[i]};
 }
 myChart3.setOption(option);
 }
+
+function sorting(){
+    var myselect=document.getElementById("rankdate");
+    var sindex=myselect.selectedIndex;
+    var mydate=myselect.options[sindex].value;//得到日期
+    var tdcountry=[];
+    var tdnumber=[];
+    var tdaindex=[];
+    var inf=0;
+    //var mydate1='2020'+mydate;
+    
+    for(i=0;i<country.length;i++){
+        if(day1[i]==mydate){
+            tdcountry[inf]=country[i];
+            tdnumber[inf]=num[i];
+            tdaindex[inf]=index1[i];
+            inf++;
+        }
+    }
+    //alert(tdcountry[0])
+    for(i=0;i<inf-1;i++){//冒泡排序
+        for(j=0;j<inf-i-1;j++){
+            if(tdaindex[j]<tdaindex[j+1]){
+               temp1=tdaindex[j];
+               tdaindex[j]=tdaindex[j+1];
+               tdaindex[j+1]=temp1;
+               temp2=tdnumber[j];
+               tdnumber[j]=tdnumber[j+1];
+               tdnumber[j+1]=temp2;
+               temp3=tdcountry[j];
+               tdcountry[j]=tdcountry[j+1];
+               tdcountry[j+1]=temp3;
+            }
+        }
+    }
+    //alert(tdaindex[5])
+    for(i=1;i<11;i++){
+        // if(tdnumber[i-1]>3){
+        var zmax=document.getElementById("z"+i);
+        var number=tdaindex[i-1]*1000;
+        var number=Math.round(number);
+        var number=number/1000;
+        var ans="country:"+tdcountry[i-1]+",index:"+number;
+        // if(province3[i-1]!=""){
+        //     ans=province3[i-1]+','+nation3[i-1]+":"+recoverdata[i-1];
+        // }
+        // else{
+        //     ans=nation3[i-1]+":"+recoverdata[i-1];
+        // }
+        zmax.innerText=ans;
+        }
+    // }
+}
+
