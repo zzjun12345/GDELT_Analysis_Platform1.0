@@ -209,6 +209,15 @@ html {
     overflow: auto;
     background: rgba(255, 255, 255, 0.8);
     }
+    #map #showdatetime{
+        color: white;
+        position: absolute;
+        z-index: 999;
+        margin-top: 60px;
+        margin-left: 60px;
+        font-size: x-large;
+        font-weight: 700;
+    }
 /*checkbox*/
 .sidebar-nav li .chrow_left{
     width: 110px;

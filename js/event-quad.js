@@ -101,7 +101,7 @@ series: [
 }
 )
 })
-console.log(options)
+// console.log(options)
 
 option = {
 baseOption:{
