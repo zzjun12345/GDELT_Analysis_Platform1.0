@@ -244,3 +244,22 @@ html {
     height:1000px;
     width:920px
 }
+.p1{
+    font-size:16px;
+    text-align: center;
+}
+.p11{
+    font-size:16px;
+    text-align: center;
+}
+.p2{
+    font-size:16px;
+    text-align: center;
+}
+.div3{
+    width:300px;
+    height:400px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    left:100px;
+}

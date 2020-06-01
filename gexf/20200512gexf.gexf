@@ -1,0 +1,1190 @@
+<?xml version="1.0" ?><gexf ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd" version="1.2" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
+    <meta lastmodified="2020-05-31">    
+        <creator>Gephi.org</creator>    
+        <description>A Web network</description>    
+    </meta>  
+    <graph defaultedgetype="undirected" label="A Web network" mode="static" timeformat="double">    
+        <attributes class="node" mode="static">      
+            <attribute id="country" title="country" type="string"/>      
+            <attribute id="modularity_class" title="Modularity_class" type="integer"/>      
+            <attribute id="nodenumber" title="nodenumber" type="integer"/>      
+        </attributes>    
+        <attributes class="edge" mode="static">      
+            <attribute id="country1" title="country1" type="string">        
+                <default>country1</default>        
+            </attribute>      
+            <attribute id="country2" title="country2" type="string">        
+                <default>country2</default>        
+            </attribute>      
+            <attribute id="edgenumber" title="edgenumber" type="integer">        
+                <default>0</default>        
+            </attribute>      
+        </attributes>    
+        <nodes>      
+            <node id="AFG" label="AFG">        
+                <attvalues>          
+                    <attvalue for="country" value="AFG"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="80" g="254" r="167"/>        <viz:position x="167" y="254" z="80"/>      </node>      
+            <node id="AFR" label="AFR">        
+                <attvalues>          
+                    <attvalue for="country" value="AFR"/>          
+                    <attvalue for="nodenumber" value="14"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="59" g="80" r="97"/>        <viz:position x="97" y="80" z="59"/>      </node>      
+            <node id="ARE" label="ARE">        
+                <attvalues>          
+                    <attvalue for="country" value="ARE"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="238" g="203" r="88"/>        <viz:position x="88" y="203" z="238"/>      </node>      
+            <node id="AUS" label="AUS">        
+                <attvalues>          
+                    <attvalue for="country" value="AUS"/>          
+                    <attvalue for="nodenumber" value="17"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="47" g="217" r="150"/>        <viz:position x="150" y="217" z="47"/>      </node>      
+            <node id="AUT" label="AUT">        
+                <attvalues>          
+                    <attvalue for="country" value="AUT"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="70" g="8" r="118"/>        <viz:position x="118" y="8" z="70"/>      </node>      
+            <node id="AZE" label="AZE">        
+                <attvalues>          
+                    <attvalue for="country" value="AZE"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="193" g="93" r="209"/>        <viz:position x="209" y="93" z="193"/>      </node>      
+            <node id="BDI" label="BDI">        
+                <attvalues>          
+                    <attvalue for="country" value="BDI"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="78" g="146" r="164"/>        <viz:position x="164" y="146" z="78"/>      </node>      
+            <node id="BEL" label="BEL">        
+                <attvalues>          
+                    <attvalue for="country" value="BEL"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="46" g="51" r="102"/>        <viz:position x="102" y="51" z="46"/>      </node>      
+            <node id="BRA" label="BRA">        
+                <attvalues>          
+                    <attvalue for="country" value="BRA"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="102" g="77" r="231"/>        <viz:position x="231" y="77" z="102"/>      </node>      
+            <node id="CAN" label="CAN">        
+                <attvalues>          
+                    <attvalue for="country" value="CAN"/>          
+                    <attvalue for="nodenumber" value="14"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="170" g="181" r="81"/>        <viz:position x="81" y="181" z="170"/>      </node>      
+            <node id="CHE" label="CHE">        
+                <attvalues>          
+                    <attvalue for="country" value="CHE"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="16" g="12" r="224"/>        <viz:position x="224" y="12" z="16"/>      </node>      
+            <node id="CHN" label="CHN">        
+                <attvalues>          
+                    <attvalue for="country" value="CHN"/>          
+                    <attvalue for="nodenumber" value="43"/>          
+                    <attvalue for="modularity_class" value="0"/>          
+                </attvalues>        
+              <viz:size value="7"/>        <viz:color b="34" g="202" r="249"/>        <viz:position x="249" y="202" z="34"/>      </node>      
+            <node id="COL" label="COL">        
+                <attvalues>          
+                    <attvalue for="country" value="COL"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="119" g="37" r="57"/>        <viz:position x="57" y="37" z="119"/>      </node>      
+            <node id="DEU" label="DEU">        
+                <attvalues>          
+                    <attvalue for="country" value="DEU"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="105" g="200" r="251"/>        <viz:position x="251" y="200" z="105"/>      </node>      
+            <node id="DNK" label="DNK">        
+                <attvalues>          
+                    <attvalue for="country" value="DNK"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="254" g="144" r="223"/>        <viz:position x="223" y="144" z="254"/>      </node>      
+            <node id="DZA" label="DZA">        
+                <attvalues>          
+                    <attvalue for="country" value="DZA"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="2" g="175" r="166"/>        <viz:position x="166" y="175" z="2"/>      </node>      
+            <node id="EGY" label="EGY">        
+                <attvalues>          
+                    <attvalue for="country" value="EGY"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="218" g="10" r="59"/>        <viz:position x="59" y="10" z="218"/>      </node>      
+            <node id="EST" label="EST">        
+                <attvalues>          
+                    <attvalue for="country" value="EST"/>          
+                    <attvalue for="nodenumber" value="8"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="62" g="135" r="231"/>        <viz:position x="231" y="135" z="62"/>      </node>      
+            <node id="EUR" label="EUR">        
+                <attvalues>          
+                    <attvalue for="country" value="EUR"/>          
+                    <attvalue for="nodenumber" value="14"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="46" g="62" r="248"/>        <viz:position x="248" y="62" z="46"/>      </node>      
+            <node id="FRA" label="FRA">        
+                <attvalues>          
+                    <attvalue for="country" value="FRA"/>          
+                    <attvalue for="nodenumber" value="21"/>          
+                    <attvalue for="modularity_class" value="0"/>          
+                </attvalues>        
+              <viz:size value="5"/>        <viz:color b="158" g="208" r="39"/>        <viz:position x="39" y="208" z="158"/>      </node>      
+            <node id="GBR" label="GBR">        
+                <attvalues>          
+                    <attvalue for="country" value="GBR"/>          
+                    <attvalue for="nodenumber" value="18"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="236" g="72" r="245"/>        <viz:position x="245" y="72" z="236"/>      </node>      
+            <node id="GHA" label="GHA">        
+                <attvalues>          
+                    <attvalue for="country" value="GHA"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="99" g="85" r="112"/>        <viz:position x="112" y="85" z="99"/>      </node>      
+            <node id="GRC" label="GRC">        
+                <attvalues>          
+                    <attvalue for="country" value="GRC"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="152" g="47" r="165"/>        <viz:position x="165" y="47" z="152"/>      </node>      
+            <node id="GRD" label="GRD">        
+                <attvalues>          
+                    <attvalue for="country" value="GRD"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="176" g="210" r="104"/>        <viz:position x="104" y="210" z="176"/>      </node>      
+            <node id="GTM" label="GTM">        
+                <attvalues>          
+                    <attvalue for="country" value="GTM"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="32" g="50" r="10"/>        <viz:position x="10" y="50" z="32"/>      </node>      
+            <node id="GUY" label="GUY">        
+                <attvalues>          
+                    <attvalue for="country" value="GUY"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="191" g="13" r="134"/>        <viz:position x="134" y="13" z="191"/>      </node>      
+            <node id="IDN" label="IDN">        
+                <attvalues>          
+                    <attvalue for="country" value="IDN"/>          
+                    <attvalue for="nodenumber" value="6"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="249" g="240" r="196"/>        <viz:position x="196" y="240" z="249"/>      </node>      
+            <node id="IND" label="IND">        
+                <attvalues>          
+                    <attvalue for="country" value="IND"/>          
+                    <attvalue for="nodenumber" value="9"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="138" g="175" r="76"/>        <viz:position x="76" y="175" z="138"/>      </node>      
+            <node id="IRN" label="IRN">        
+                <attvalues>          
+                    <attvalue for="country" value="IRN"/>          
+                    <attvalue for="nodenumber" value="11"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="40" g="5" r="139"/>        <viz:position x="139" y="5" z="40"/>      </node>      
+            <node id="ISR" label="ISR">        
+                <attvalues>          
+                    <attvalue for="country" value="ISR"/>          
+                    <attvalue for="nodenumber" value="29"/>          
+                    <attvalue for="modularity_class" value="0"/>          
+                </attvalues>        
+              <viz:size value="5"/>        <viz:color b="84" g="111" r="81"/>        <viz:position x="81" y="111" z="84"/>      </node>      
+            <node id="ITA" label="ITA">        
+                <attvalues>          
+                    <attvalue for="country" value="ITA"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="60" g="122" r="182"/>        <viz:position x="182" y="122" z="60"/>      </node>      
+            <node id="JAM" label="JAM">        
+                <attvalues>          
+                    <attvalue for="country" value="JAM"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="204" g="113" r="68"/>        <viz:position x="68" y="113" z="204"/>      </node>      
+            <node id="JOR" label="JOR">        
+                <attvalues>          
+                    <attvalue for="country" value="JOR"/>          
+                    <attvalue for="nodenumber" value="13"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="197" g="10" r="186"/>        <viz:position x="186" y="10" z="197"/>      </node>      
+            <node id="KEN" label="KEN">        
+                <attvalues>          
+                    <attvalue for="country" value="KEN"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="46" g="220" r="46"/>        <viz:position x="46" y="220" z="46"/>      </node>      
+            <node id="KOR" label="KOR">        
+                <attvalues>          
+                    <attvalue for="country" value="KOR"/>          
+                    <attvalue for="nodenumber" value="6"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="184" g="65" r="213"/>        <viz:position x="213" y="65" z="184"/>      </node>      
+            <node id="LBN" label="LBN">        
+                <attvalues>          
+                    <attvalue for="country" value="LBN"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="117" g="129" r="15"/>        <viz:position x="15" y="129" z="117"/>      </node>      
+            <node id="LKA" label="LKA">        
+                <attvalues>          
+                    <attvalue for="country" value="LKA"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="117" g="232" r="212"/>        <viz:position x="212" y="232" z="117"/>      </node>      
+            <node id="LTU" label="LTU">        
+                <attvalues>          
+                    <attvalue for="country" value="LTU"/>          
+                    <attvalue for="nodenumber" value="6"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="183" g="25" r="23"/>        <viz:position x="23" y="25" z="183"/>      </node>      
+            <node id="LVA" label="LVA">        
+                <attvalues>          
+                    <attvalue for="country" value="LVA"/>          
+                    <attvalue for="nodenumber" value="7"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="130" g="232" r="24"/>        <viz:position x="24" y="232" z="130"/>      </node>      
+            <node id="MAR" label="MAR">        
+                <attvalues>          
+                    <attvalue for="country" value="MAR"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="118" g="0" r="250"/>        <viz:position x="250" y="0" z="118"/>      </node>      
+            <node id="MDG" label="MDG">        
+                <attvalues>          
+                    <attvalue for="country" value="MDG"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="164" g="237" r="214"/>        <viz:position x="214" y="237" z="164"/>      </node>      
+            <node id="MDV" label="MDV">        
+                <attvalues>          
+                    <attvalue for="country" value="MDV"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="124" g="221" r="211"/>        <viz:position x="211" y="221" z="124"/>      </node>      
+            <node id="MEX" label="MEX">        
+                <attvalues>          
+                    <attvalue for="country" value="MEX"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="81" g="37" r="94"/>        <viz:position x="94" y="37" z="81"/>      </node>      
+            <node id="MMR" label="MMR">        
+                <attvalues>          
+                    <attvalue for="country" value="MMR"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="204" g="206" r="216"/>        <viz:position x="216" y="206" z="204"/>      </node>      
+            <node id="MYS" label="MYS">        
+                <attvalues>          
+                    <attvalue for="country" value="MYS"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="47" g="162" r="55"/>        <viz:position x="55" y="162" z="47"/>      </node>      
+            <node id="NER" label="NER">        
+                <attvalues>          
+                    <attvalue for="country" value="NER"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="95" g="254" r="116"/>        <viz:position x="116" y="254" z="95"/>      </node>      
+            <node id="NGA" label="NGA">        
+                <attvalues>          
+                    <attvalue for="country" value="NGA"/>          
+                    <attvalue for="nodenumber" value="5"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="246" g="58" r="188"/>        <viz:position x="188" y="58" z="246"/>      </node>      
+            <node id="NPL" label="NPL">        
+                <attvalues>          
+                    <attvalue for="country" value="NPL"/>          
+                    <attvalue for="nodenumber" value="10"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="245" g="67" r="14"/>        <viz:position x="14" y="67" z="245"/>      </node>      
+            <node id="NZL" label="NZL">        
+                <attvalues>          
+                    <attvalue for="country" value="NZL"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="72" g="40" r="144"/>        <viz:position x="144" y="40" z="72"/>      </node>      
+            <node id="OMN" label="OMN">        
+                <attvalues>          
+                    <attvalue for="country" value="OMN"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="29" g="49" r="205"/>        <viz:position x="205" y="49" z="29"/>      </node>      
+            <node id="PAK" label="PAK">        
+                <attvalues>          
+                    <attvalue for="country" value="PAK"/>          
+                    <attvalue for="nodenumber" value="6"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="114" g="32" r="40"/>        <viz:position x="40" y="32" z="114"/>      </node>      
+            <node id="PHL" label="PHL">        
+                <attvalues>          
+                    <attvalue for="country" value="PHL"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="11" g="176" r="153"/>        <viz:position x="153" y="176" z="11"/>      </node>      
+            <node id="POL" label="POL">        
+                <attvalues>          
+                    <attvalue for="country" value="POL"/>          
+                    <attvalue for="nodenumber" value="5"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="180" g="210" r="164"/>        <viz:position x="164" y="210" z="180"/>      </node>      
+            <node id="PRK" label="PRK">        
+                <attvalues>          
+                    <attvalue for="country" value="PRK"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="154" g="10" r="138"/>        <viz:position x="138" y="10" z="154"/>      </node>      
+            <node id="PSE" label="PSE">        
+                <attvalues>          
+                    <attvalue for="country" value="PSE"/>          
+                    <attvalue for="nodenumber" value="10"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="106" g="220" r="248"/>        <viz:position x="248" y="220" z="106"/>      </node>      
+            <node id="QAT" label="QAT">        
+                <attvalues>          
+                    <attvalue for="country" value="QAT"/>          
+                    <attvalue for="nodenumber" value="9"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="168" g="141" r="250"/>        <viz:position x="250" y="141" z="168"/>      </node>      
+            <node id="RUS" label="RUS">        
+                <attvalues>          
+                    <attvalue for="country" value="RUS"/>          
+                    <attvalue for="nodenumber" value="9"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="151" g="138" r="123"/>        <viz:position x="123" y="138" z="151"/>      </node>      
+            <node id="SDN" label="SDN">        
+                <attvalues>          
+                    <attvalue for="country" value="SDN"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="150" g="181" r="235"/>        <viz:position x="235" y="181" z="150"/>      </node>      
+            <node id="SEN" label="SEN">        
+                <attvalues>          
+                    <attvalue for="country" value="SEN"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="164" g="40" r="84"/>        <viz:position x="84" y="40" z="164"/>      </node>      
+            <node id="SLB" label="SLB">        
+                <attvalues>          
+                    <attvalue for="country" value="SLB"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="231" g="175" r="171"/>        <viz:position x="171" y="175" z="231"/>      </node>      
+            <node id="SLE" label="SLE">        
+                <attvalues>          
+                    <attvalue for="country" value="SLE"/>          
+                    <attvalue for="nodenumber" value="6"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="207" g="78" r="14"/>        <viz:position x="14" y="78" z="207"/>      </node>      
+            <node id="SSD" label="SSD">        
+                <attvalues>          
+                    <attvalue for="country" value="SSD"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="254" g="146" r="173"/>        <viz:position x="173" y="146" z="254"/>      </node>      
+            <node id="SVK" label="SVK">        
+                <attvalues>          
+                    <attvalue for="country" value="SVK"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="7" g="83" r="154"/>        <viz:position x="154" y="83" z="7"/>      </node>      
+            <node id="SYR" label="SYR">        
+                <attvalues>          
+                    <attvalue for="country" value="SYR"/>          
+                    <attvalue for="nodenumber" value="6"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="140" g="120" r="121"/>        <viz:position x="121" y="120" z="140"/>      </node>      
+            <node id="TCD" label="TCD">        
+                <attvalues>          
+                    <attvalue for="country" value="TCD"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="224" g="14" r="246"/>        <viz:position x="246" y="14" z="224"/>      </node>      
+            <node id="THA" label="THA">        
+                <attvalues>          
+                    <attvalue for="country" value="THA"/>          
+                    <attvalue for="nodenumber" value="4"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="196" g="101" r="15"/>        <viz:position x="15" y="101" z="196"/>      </node>      
+            <node id="TWN" label="TWN">        
+                <attvalues>          
+                    <attvalue for="country" value="TWN"/>          
+                    <attvalue for="nodenumber" value="7"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="3"/>        <viz:color b="45" g="71" r="88"/>        <viz:position x="88" y="71" z="45"/>      </node>      
+            <node id="TZA" label="TZA">        
+                <attvalues>          
+                    <attvalue for="country" value="TZA"/>          
+                    <attvalue for="nodenumber" value="1"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="231" g="77" r="147"/>        <viz:position x="147" y="77" z="231"/>      </node>      
+            <node id="UGA" label="UGA">        
+                <attvalues>          
+                    <attvalue for="country" value="UGA"/>          
+                    <attvalue for="nodenumber" value="3"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="137" g="252" r="46"/>        <viz:position x="46" y="252" z="137"/>      </node>      
+            <node id="USA" label="USA">        
+                <attvalues>          
+                    <attvalue for="country" value="USA"/>          
+                    <attvalue for="nodenumber" value="96"/>          
+                    <attvalue for="modularity_class" value="0"/>          
+                </attvalues>        
+              <viz:size value="10"/>        <viz:color b="53" g="61" r="99"/>        <viz:position x="99" y="61" z="53"/>      </node>      
+            <node id="UZB" label="UZB">        
+                <attvalues>          
+                    <attvalue for="country" value="UZB"/>          
+                    <attvalue for="nodenumber" value="2"/>          
+                    <attvalue for="modularity_class" value="3"/>          
+                </attvalues>        
+              <viz:size value="1"/>        <viz:color b="165" g="238" r="95"/>        <viz:position x="95" y="238" z="165"/>      </node>      
+            <node id="ZAF" label="ZAF">        
+                <attvalues>          
+                    <attvalue for="country" value="ZAF"/>          
+                    <attvalue for="nodenumber" value="13"/>          
+                    <attvalue for="modularity_class" value="1"/>          
+                </attvalues>        
+              <viz:size value="4"/>        <viz:color b="122" g="213" r="90"/>        <viz:position x="90" y="213" z="122"/>      </node>      
+            <node id="ZWE" label="ZWE">        
+                <attvalues>          
+                    <attvalue for="country" value="ZWE"/>          
+                    <attvalue for="nodenumber" value="5"/>          
+                    <attvalue for="modularity_class" value="2"/>          
+                </attvalues>        
+              <viz:size value="2"/>        <viz:color b="121" g="18" r="159"/>        <viz:position x="159" y="18" z="121"/>      </node>      
+        </nodes>    
+        <edges>      
+            <edge id="0" source="PSE" target="ISR" weight="3">        
+                <attvalues>          
+                    <attvalue for="country1" value="PSE"/>          
+                    <attvalue for="country2" value="ISR"/>          
+                    <attvalue for="edgenumber" value="8"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="1" source="EUR" target="GBR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="EUR"/>          
+                    <attvalue for="country2" value="GBR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="10" source="AUS" target="ITA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="AUS"/>          
+                    <attvalue for="country2" value="ITA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="11" source="USA" target="TCD" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="TCD"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="12" source="USA" target="UGA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="UGA"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="13" source="MDV" target="SLB" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="MDV"/>          
+                    <attvalue for="country2" value="SLB"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="14" source="USA" target="DEU" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="DEU"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="15" source="AFR" target="ZAF" weight="3">        
+                <attvalues>          
+                    <attvalue for="country1" value="AFR"/>          
+                    <attvalue for="country2" value="ZAF"/>          
+                    <attvalue for="edgenumber" value="10"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="16" source="CHN" target="ZWE" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="CHN"/>          
+                    <attvalue for="country2" value="ZWE"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="17" source="EUR" target="ISR" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="EUR"/>          
+                    <attvalue for="country2" value="ISR"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="18" source="CAN" target="QAT" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="CAN"/>          
+                    <attvalue for="country2" value="QAT"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="19" source="DNK" target="QAT" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="DNK"/>          
+                    <attvalue for="country2" value="QAT"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="2" source="CHN" target="PHL" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="CHN"/>          
+                    <attvalue for="country2" value="PHL"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="20" source="KOR" target="QAT" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="KOR"/>          
+                    <attvalue for="country2" value="QAT"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="21" source="SLE" target="QAT" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="SLE"/>          
+                    <attvalue for="country2" value="QAT"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="22" source="USA" target="POL" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="POL"/>          
+                    <attvalue for="edgenumber" value="5"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="23" source="BRA" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="BRA"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="24" source="NGA" target="MDG" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="NGA"/>          
+                    <attvalue for="country2" value="MDG"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="25" source="FRA" target="CHN" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="FRA"/>          
+                    <attvalue for="country2" value="CHN"/>          
+                    <attvalue for="edgenumber" value="5"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="26" source="LKA" target="NGA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="LKA"/>          
+                    <attvalue for="country2" value="NGA"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="27" source="RUS" target="AZE" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="RUS"/>          
+                    <attvalue for="country2" value="AZE"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="28" source="USA" target="LVA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="LVA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="29" source="CHN" target="TWN" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="CHN"/>          
+                    <attvalue for="country2" value="TWN"/>          
+                    <attvalue for="edgenumber" value="6"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="3" source="USA" target="CHN" weight="4">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="CHN"/>          
+                    <attvalue for="edgenumber" value="16"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="30" source="ISR" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="ISR"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="6"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="31" source="ZWE" target="AFR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="ZWE"/>          
+                    <attvalue for="country2" value="AFR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="32" source="CAN" target="USA" weight="3">        
+                <attvalues>          
+                    <attvalue for="country1" value="CAN"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="10"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="33" source="EUR" target="FRA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="EUR"/>          
+                    <attvalue for="country2" value="FRA"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="34" source="USA" target="MDV" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="MDV"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="35" source="AFG" target="USA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="AFG"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="36" source="JOR" target="ISR" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="JOR"/>          
+                    <attvalue for="country2" value="ISR"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="37" source="NER" target="SEN" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="NER"/>          
+                    <attvalue for="country2" value="SEN"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="38" source="PSE" target="USA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="PSE"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="39" source="DEU" target="FRA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="DEU"/>          
+                    <attvalue for="country2" value="FRA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="4" source="AUS" target="ZAF" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="AUS"/>          
+                    <attvalue for="country2" value="ZAF"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="40" source="DEU" target="EUR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="DEU"/>          
+                    <attvalue for="country2" value="EUR"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="41" source="GBR" target="ITA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="GBR"/>          
+                    <attvalue for="country2" value="ITA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="42" source="NZL" target="TWN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="NZL"/>          
+                    <attvalue for="country2" value="TWN"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="43" source="USA" target="CHE" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="CHE"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="44" source="AUS" target="CHN" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="AUS"/>          
+                    <attvalue for="country2" value="CHN"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="45" source="TZA" target="KOR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="TZA"/>          
+                    <attvalue for="country2" value="KOR"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="46" source="USA" target="BDI" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="BDI"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="47" source="USA" target="MEX" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="MEX"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="48" source="JOR" target="USA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="JOR"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="49" source="JOR" target="SYR" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="JOR"/>          
+                    <attvalue for="country2" value="SYR"/>          
+                    <attvalue for="edgenumber" value="6"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="5" source="ISR" target="QAT" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="ISR"/>          
+                    <attvalue for="country2" value="QAT"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="50" source="FRA" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="FRA"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="6"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="51" source="IDN" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="IDN"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="5"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="52" source="CHN" target="MYS" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="CHN"/>          
+                    <attvalue for="country2" value="MYS"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="53" source="IRN" target="PAK" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="IRN"/>          
+                    <attvalue for="country2" value="PAK"/>          
+                    <attvalue for="edgenumber" value="6"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="54" source="AUT" target="SVK" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="AUT"/>          
+                    <attvalue for="country2" value="SVK"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="55" source="KEN" target="UGA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="KEN"/>          
+                    <attvalue for="country2" value="UGA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="56" source="IRN" target="JOR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="IRN"/>          
+                    <attvalue for="country2" value="JOR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="57" source="NPL" target="CHN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="NPL"/>          
+                    <attvalue for="country2" value="CHN"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="58" source="NPL" target="IND" weight="3">        
+                <attvalues>          
+                    <attvalue for="country1" value="NPL"/>          
+                    <attvalue for="country2" value="IND"/>          
+                    <attvalue for="edgenumber" value="9"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="59" source="USA" target="GTM" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="GTM"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="6" source="USA" target="NGA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="NGA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="60" source="GBR" target="ISR" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="GBR"/>          
+                    <attvalue for="country2" value="ISR"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="61" source="GBR" target="FRA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="GBR"/>          
+                    <attvalue for="country2" value="FRA"/>          
+                    <attvalue for="edgenumber" value="5"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="62" source="USA" target="GBR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="GBR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="63" source="BEL" target="MMR" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="BEL"/>          
+                    <attvalue for="country2" value="MMR"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="64" source="USA" target="IRN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="IRN"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="65" source="OMN" target="IDN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="OMN"/>          
+                    <attvalue for="country2" value="IDN"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="66" source="RUS" target="PRK" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="RUS"/>          
+                    <attvalue for="country2" value="PRK"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="67" source="THA" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="THA"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="68" source="AUS" target="GBR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="AUS"/>          
+                    <attvalue for="country2" value="GBR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="69" source="AUS" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="AUS"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="7" source="KOR" target="CHN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="KOR"/>          
+                    <attvalue for="country2" value="CHN"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="70" source="BEL" target="EUR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="BEL"/>          
+                    <attvalue for="country2" value="EUR"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="71" source="ISR" target="MAR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="ISR"/>          
+                    <attvalue for="country2" value="MAR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="72" source="USA" target="AFR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="AFR"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="73" source="EUR" target="CHN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="EUR"/>          
+                    <attvalue for="country2" value="CHN"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="74" source="RUS" target="ARE" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="RUS"/>          
+                    <attvalue for="country2" value="ARE"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="75" source="DZA" target="LBN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="DZA"/>          
+                    <attvalue for="country2" value="LBN"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="76" source="KEN" target="USA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="KEN"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="77" source="EST" target="LTU" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="EST"/>          
+                    <attvalue for="country2" value="LTU"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="78" source="EST" target="LVA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="EST"/>          
+                    <attvalue for="country2" value="LVA"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="79" source="EUR" target="USA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="EUR"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="8" source="RUS" target="GRD" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="RUS"/>          
+                    <attvalue for="country2" value="GRD"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="80" source="LVA" target="LTU" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="LVA"/>          
+                    <attvalue for="country2" value="LTU"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="81" source="SSD" target="SDN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="SSD"/>          
+                    <attvalue for="country2" value="SDN"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="82" source="CHN" target="IRN" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="CHN"/>          
+                    <attvalue for="country2" value="IRN"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="83" source="USA" target="SLE" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="USA"/>          
+                    <attvalue for="country2" value="SLE"/>          
+                    <attvalue for="edgenumber" value="4"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="84" source="RUS" target="USA" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="RUS"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="85" source="EGY" target="USA" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="EGY"/>          
+                    <attvalue for="country2" value="USA"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="86" source="UZB" target="RUS" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="UZB"/>          
+                    <attvalue for="country2" value="RUS"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="87" source="GUY" target="COL" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="GUY"/>          
+                    <attvalue for="country2" value="COL"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="88" source="NZL" target="AUS" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="NZL"/>          
+                    <attvalue for="country2" value="AUS"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="89" source="CHN" target="ISR" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="CHN"/>          
+                    <attvalue for="country2" value="ISR"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="9" source="JAM" target="CAN" weight="2">        
+                <attvalues>          
+                    <attvalue for="country1" value="JAM"/>          
+                    <attvalue for="country2" value="CAN"/>          
+                    <attvalue for="edgenumber" value="3"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="90" source="GHA" target="AUS" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="GHA"/>          
+                    <attvalue for="country2" value="AUS"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="91" source="GRC" target="ZWE" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="GRC"/>          
+                    <attvalue for="country2" value="ZWE"/>          
+                    <attvalue for="edgenumber" value="1"/>          
+                </attvalues>        
+            </edge>      
+            <edge id="92" source="GBR" target="GRC" weight="1">        
+                <attvalues>          
+                    <attvalue for="country1" value="GBR"/>          
+                    <attvalue for="country2" value="GRC"/>          
+                    <attvalue for="edgenumber" value="2"/>          
+                </attvalues>        
+            </edge>      
+        </edges>    
+    </graph>  
+</gexf>
