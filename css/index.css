@@ -257,9 +257,8 @@ html {
     text-align: center;
 }
 .div3{
-    width:300px;
-    height:400px;
-    background-color: #ffffff;
+    width:500px;
+    height:550px;
     overflow-y: auto;
     left:100px;
 }
