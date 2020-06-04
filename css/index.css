@@ -143,6 +143,7 @@ html {
     height: 510px;
     width: 1000px;
     float: left;
+    z-index: 0;
 }
 #analysis .anawrapper .content_wrapper .other_charts .row2 #anachart4{
     height: 510px;
@@ -237,12 +238,15 @@ html {
 }  */
 
 #attitudechart{
-    height:500px;
+    height:465px;
     width:550px
 }
-#gexfgraph{
+.gexfgraph{
     height:1000px;
     width:920px
+}
+.gexfgraph1 .gexfgraph2 .gexfgraph3{
+    position: absolute;
 }
 .p1{
     font-size:16px;
@@ -261,4 +265,26 @@ html {
     height:550px;
     overflow-y: auto;
     left:100px;
+}
+#gexflbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowleft.png);
+}
+#gexfrbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowright.png);
+}
+#attitudelbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowleft.png);
+    z-index: 100;
+}
+#attituderbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowright.png);
+    z-index: 100;
 }

@@ -1,3 +1,5 @@
+var tempattitude=0;
+var tempgexf=0;
 var date=[];
 var typ=[];
 var number=[];
@@ -48,12 +50,16 @@ $.ajax({
 })
 
 function newrelation(){
-var myChart2=echarts.init(document.getElementById('gexfgraph'));
+var myChart2=echarts.init(document.getElementById('gexfgraph1'));
 myChart2.showLoading();
 var rtime=document.getElementById("rdate");
 var sindex=rtime.selectedIndex;
 var rdate=rtime.options[sindex].value;//得到日期
-var graphname='gexf/2020'+rdate+'gexf.gexf';
+//操作日期
+// alert(rdate)
+rdate=parseInt(rdate);
+rdate=rdate+tempgexf;
+var graphname='gexf/'+rdate+'gexf.gexf';
 $.get(graphname, function (xml) {
     myChart2.hideLoading();
     var graph = echarts.dataTool.gexf.parse(xml);
@@ -150,6 +156,9 @@ function selectattitude(){
 var myselect=document.getElementById("date");
 var sindex=myselect.selectedIndex;
 var mydate=myselect.options[sindex].value;//得到日期
+mydate=parseInt(mydate)
+mydate=mydate+tempattitude;
+// alert(mydate)
 var myChart3 = echarts.init(document.getElementById("attitudechart"));
 var tdtype=[];
 var tdnumber=[];
@@ -254,3 +263,27 @@ function sorting(){
     // }
 }
 
+function gexflbtnclick(){
+    tempgexf--;
+    newrelation();
+    var gname=document.getElementById("gexfname");
+    gname.innerText='234'
+}
+function gexfrbtnclick(){
+    tempgexf++;
+    newrelation();
+    var gname=document.getElementById("gexfname");
+    gname.innerText='123'
+}
+function attlbtnclick(){
+    tempattitude--;
+    selectattitude();
+    var aname=document.getElementById("attitudename");
+    aname.innerText='234'
+}
+function attrbtnclick(){
+    tempattitude++;
+    selectattitude();
+    var aname=document.getElementById("attitudename");
+    aname.innerText='123'
+}
