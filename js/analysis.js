@@ -1,5 +1,128 @@
+$('#datetimepicker').datetimepicker({
+    format: 'yyyy-mm-dd',
+    autoclose:true,//自动关闭
+    minView:2,//最精准的时间选择为日期0-分 1-时 2-日 3-月 
+    weekStart:0,
+    language:'zh-CN'
+ });
+
+ function isLeapYear(year) {
+    var ret = false;
+    year = parseInt(year)
+    if (((0 == (year % 4)) && (0 != (year % 100))) || (0 == (year % 400))) {
+      ret = true;
+    } else {
+      ret = false;
+    }
+    return ret;
+  }
+  function day2date(daytime,year) {
+    var monthDay_common = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    var monthDay_leap = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+    var monthDay;
+    var month = 0;
+    var day = 0;
+    var monthchar=['01','02','03','04','05','06','07','08','09','10','11','12']
+    var daychar=['01','02','03','04','05','06','07','08','09']
+    // var year = daytime.substr(0, 4);
+    // var time_DD = daytime.substr(4, 3);
+    // var hour = daytime.substr(7, 2);
+    // var minute = daytime.substr(9, 2);
+    
+    var leapYear = isLeapYear(year)
+    if (leapYear) {
+      monthDay = monthDay_leap
+    } else {
+      monthDay = monthDay_common
+    }
+   
+    for (month = 0; month < 12; month++) {
+      if (monthDay[month] >= daytime) {
+        break;
+      }
+    }
+    var date;
+    day = daytime - monthDay[month - 1];
+    month=monthchar[month-1]
+    if(day<=9){
+        day=daychar[day-1]
+        date=year.toString()+month+day;
+    }else{
+    date=year.toString()+month+day.toString();
+    }
+    return date;
+  }
+// alert(day2date(65,2020))
+function getmonth(daytime,year) {
+    var monthDay_common = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    var monthDay_leap = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+    var monthDay;
+    var month = 0;
+    var day = 0;
+    var monthchar=['01','02','03','04','05','06','07','08','09','10','11','12']
+    var daychar=['01','02','03','04','05','06','07','08','09']
+    // var year = daytime.substr(0, 4);
+    // var time_DD = daytime.substr(4, 3);
+    // var hour = daytime.substr(7, 2);
+    // var minute = daytime.substr(9, 2);
+    
+    var leapYear = isLeapYear(year)
+    if (leapYear) {
+      monthDay = monthDay_leap
+    } else {
+      monthDay = monthDay_common
+    }
+   
+    for (month = 0; month < 12; month++) {
+      if (monthDay[month] >= daytime) {
+        break;
+      }
+    }
+    var date;
+    day = daytime - monthDay[month - 1];
+    month=monthchar[month-1]
+    return month;
+}
+
+function getday(daytime,year) {
+  var monthDay_common = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+  var monthDay_leap = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+  var monthDay;
+  var month = 0;
+  var day = 0;
+  var monthchar=['01','02','03','04','05','06','07','08','09','10','11','12']
+  var daychar=['01','02','03','04','05','06','07','08','09']
+  // var year = daytime.substr(0, 4);
+  // var time_DD = daytime.substr(4, 3);
+  // var hour = daytime.substr(7, 2);
+  // var minute = daytime.substr(9, 2);
+  
+  var leapYear = isLeapYear(year)
+  if (leapYear) {
+    monthDay = monthDay_leap
+  } else {
+    monthDay = monthDay_common
+  }
+ 
+  for (month = 0; month < 12; month++) {
+    if (monthDay[month] >= daytime) {
+      break;
+    }
+  }
+  var date;
+  day = daytime - monthDay[month - 1];
+  month=monthchar[month-1]
+  if(day<=9){
+      day=daychar[day-1]
+  }else{
+  day=day.toString();
+  }
+  return day;
+}
+
 var tempattitude=0;
 var tempgexf=0;
+var tempsort=0;
 var date=[];
 var typ=[];
 var number=[];
@@ -50,15 +173,27 @@ $.ajax({
 })
 
 function newrelation(){
+var times=$("#time").val()
+var time=times.split('-')
+charyear=parseInt(time[0]);
+charmonth=parseInt(time[1]);
+charday=parseInt(time[2]);
+// rdate=time[0]+time[1]+time[2];
+var N=Math.floor(charmonth*275/9)-Math.floor((charmonth+9)/12)*(Math.floor((charyear-4*Math.floor(charyear/4)+2)/3)+1)+charday-30;
+// alert(N)
+var daytime=N+tempgexf
+var rdate=day2date(daytime,charyear)
+// alert(rdate)
 var myChart2=echarts.init(document.getElementById('gexfgraph1'));
 myChart2.showLoading();
-var rtime=document.getElementById("rdate");
-var sindex=rtime.selectedIndex;
-var rdate=rtime.options[sindex].value;//得到日期
+// var rtime=document.getElementById("rdate");
+// var sindex=rtime.selectedIndex;
+// var rdate=rtime.options[sindex].value;//得到日期
 //操作日期
-// alert(rdate)
-rdate=parseInt(rdate);
-rdate=rdate+tempgexf;
+var gname=document.getElementById("gexfname");
+var newmonth=getmonth(daytime,charyear)
+var newdate=getday(daytime,charyear)
+gname.innerText=time[0]+'年'+parseInt(newmonth)+'月'+parseInt(newdate)+'日'+'GDELT国家关系网络图'
 var graphname='gexf/'+rdate+'gexf.gexf';
 $.get(graphname, function (xml) {
     myChart2.hideLoading();
@@ -153,12 +288,26 @@ $.get(graphname, function (xml) {
 }, 'xml');
 }
 function selectattitude(){
-var myselect=document.getElementById("date");
-var sindex=myselect.selectedIndex;
-var mydate=myselect.options[sindex].value;//得到日期
-mydate=parseInt(mydate)
-mydate=mydate+tempattitude;
+var times=$("#time").val()
+var time=times.split('-')
+charyear=parseInt(time[0]);
+charmonth=parseInt(time[1]);
+charday=parseInt(time[2]);
+// rdate=time[0]+time[1]+time[2];
+var N=Math.floor(charmonth*275/9)-Math.floor((charmonth+9)/12)*(Math.floor((charyear-4*Math.floor(charyear/4)+2)/3)+1)+charday-30;
+// alert(N)
+var daytime=N+tempattitude
+var mydate=day2date(daytime,charyear)
+// var myselect=document.getElementById("date");
+// var sindex=myselect.selectedIndex;
+// var mydate=myselect.options[sindex].value;//得到日期
+// mydate=parseInt(mydate)
+// mydate=mydate+tempattitude;
 // alert(mydate)
+var aname=document.getElementById("attitudename");
+var newmonth=getmonth(daytime,charyear)
+var newdate=getday(daytime,charyear)
+aname.innerText=time[0]+'年'+parseInt(newmonth)+'月'+parseInt(newdate)+'日'+'事件态度图'
 var myChart3 = echarts.init(document.getElementById("attitudechart"));
 var tdtype=[];
 var tdnumber=[];
@@ -211,9 +360,23 @@ myChart3.setOption(option);
 }
 
 function sorting(){
-    var myselect=document.getElementById("rankdate");
-    var sindex=myselect.selectedIndex;
-    var mydate=myselect.options[sindex].value;//得到日期
+    var times=$("#time").val()
+    var time=times.split('-')
+    charyear=parseInt(time[0]);
+    charmonth=parseInt(time[1]);
+    charday=parseInt(time[2]);
+    // rdate=time[0]+time[1]+time[2];
+    var N=Math.floor(charmonth*275/9)-Math.floor((charmonth+9)/12)*(Math.floor((charyear-4*Math.floor(charyear/4)+2)/3)+1)+charday-30;
+    // alert(N)
+    var daytime=N+tempsort
+    var mydate=day2date(daytime,charyear)
+    var sname=document.getElementById("sortname");
+    var newmonth=getmonth(daytime,charyear)
+    var newdate=getday(daytime,charyear)
+    sname.innerText=time[0]+'年'+parseInt(newmonth)+'月'+parseInt(newdate)+'日'+'影响排序显示'
+    // var myselect=document.getElementById("rankdate");
+    // var sindex=myselect.selectedIndex;
+    // var mydate=myselect.options[sindex].value;//得到日期
     var tdcountry=[];
     var tdnumber=[];
     var tdaindex=[];
@@ -266,24 +429,31 @@ function sorting(){
 function gexflbtnclick(){
     tempgexf--;
     newrelation();
-    var gname=document.getElementById("gexfname");
-    gname.innerText='234'
 }
 function gexfrbtnclick(){
     tempgexf++;
     newrelation();
-    var gname=document.getElementById("gexfname");
-    gname.innerText='123'
 }
 function attlbtnclick(){
     tempattitude--;
     selectattitude();
-    var aname=document.getElementById("attitudename");
-    aname.innerText='234'
 }
 function attrbtnclick(){
     tempattitude++;
     selectattitude();
-    var aname=document.getElementById("attitudename");
-    aname.innerText='123'
+}
+function statistic(){
+    tempattitude=0;
+    tempgexf=0;
+    selectattitude();
+    newrelation();
+    sorting();
+}
+function sortlbtnclick(){
+    tempsort--;
+    sorting();
+}
+function sortrbtnclick(){
+    tempsort++;
+    sorting();
 }

@@ -75,6 +75,11 @@
             <input size="16" type="text" value="2020-04-01" id='time' readonly>
             <span class="add-on"><i class="icon-th"></i></span>
         </div>
+        <span class="input-group-btn">
+            <button class="btn btn-default btn1" type="button" onclick="statistic()">
+                <strong>统计</strong>
+            </button>
+        </span>
     </div><!-- /input-group -->
 </div>
 <!-- 页头结束 -->
@@ -195,7 +200,7 @@
             </div> -->
             <div class="content_wrapper">
                 <div id="chart_relation">
-                    <div>
+                    <!-- <div>
                         <select id="rdate" onchange="newrelation()">
                             <option value="20200101">1月1日</option>
                             <option value="20200102">1月2日</option>
@@ -315,7 +320,7 @@
                             <option value="20200524">5月24日</option>
                             <option value="20200525">5月25日</option>
                         </select>
-                    </div>
+                    </div> -->
                     <div id="gexfname">请先选择合适的日期</div>
                     <div class="gexfgraph" id="gexfgraph1"></div>
                     <button id='gexflbtn' onclick=gexflbtnclick()></button>
@@ -324,7 +329,7 @@
                 <div class="other_charts">
                     <div class="row1">
                         <div id="anachart1">
-                            <div>
+                            <!-- <div>
                                 <select id="date" onchange="selectattitude()">
                                     <option value="20200301">3月1日</option>
                                     <option value="20200302">3月2日</option>
@@ -412,8 +417,8 @@
                                     <option value="20200523">5月23日</option>
                                     <option value="20200524">5月24日</option>
                                     <option value="20200525">5月25日</option>
-                                </select>
-                                </div>
+                                </select> -->
+                                <!-- </div> -->
                                 <div id="attitudename">请先选择合适的日期</div>
                                 <div id="attitudechart"></div>
                                 <button id='attitudelbtn' onclick=attlbtnclick()></button>
@@ -421,7 +426,7 @@
                         </div>
                         <div id="anachart2">
                             <div>
-                                <select id="rankdate" onchange="sorting()">
+                                <!-- <select id="rankdate" onchange="sorting()">
                                     <option value="20200101">1月1日</option>
                                     <option value="20200102">1月2日</option>
                                     <option value="20200103">1月3日</option>
@@ -539,11 +544,13 @@
                                     <option value="20200523">5月23日</option>
                                     <option value="20200524">5月24日</option>
                                     <option value="20200525">5月25日</option>
-                                </select>
+                                </select> -->
                             </div>
                             <div class="div3">
-                                <p class="p1">sorting</p>
+                                <p class="p1" id="sortname">请先选择合适的日期</p>
                                 <!-- <p class="p11" id="p33">123</p> -->
+                                <p class="p2"></p>
+                                <p class="p2"></p>
                                 <p class="p2" id="z1"></p>
                                 <p class="p2" id="z2"></p>
                                 <p class="p2" id="z3"></p>
@@ -555,6 +562,8 @@
                                 <p class="p2" id="z9"></p>
                                 <p class="p2" id="z10"></p>
                             </div>
+                            <button id='sortlbtn' onclick=sortlbtnclick()></button>
+                            <button id='sortrbtn' onclick=sortrbtnclick()></button>
                         </div>
                     </div>
                     <div class="row2">

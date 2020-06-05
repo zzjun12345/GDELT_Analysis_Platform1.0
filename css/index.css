@@ -238,7 +238,7 @@ html {
 }  */
 
 #attitudechart{
-    height:465px;
+    height:450px;
     width:550px
 }
 .gexfgraph{
@@ -252,6 +252,10 @@ html {
     font-size:16px;
     text-align: center;
 }
+.p2{
+    height:20px;
+    width:500px;
+}
 .p11{
     font-size:16px;
     text-align: center;
@@ -262,7 +266,7 @@ html {
 }
 .div3{
     width:500px;
-    height:550px;
+    height:480px;
     overflow-y: auto;
     left:100px;
 }
@@ -287,4 +291,29 @@ html {
     width:35px;
     background: url(../imgs/arrowright.png);
     z-index: 100;
+}
+#sortlbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowleft.png);
+    z-index: 100;
+}
+#sortrbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowright.png);
+    z-index: 100;
+}
+#gexfname{
+    font-size: x-large;
+    text-align: center;
+    
+}
+#attitudename{
+    font-size: x-large;
+    text-align: center;
+}
+#sortname{
+    font-size: x-large;
+    text-align: center;
 }
