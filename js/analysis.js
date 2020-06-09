@@ -143,7 +143,6 @@ $.ajax({
            typ[i]=data[i].type;
            number[i]=data[i].number;
        }
-        //alert(number[5]);
     }
 })
 var day1=[]
@@ -216,9 +215,7 @@ $.get(graphname, function (xml) {
         node.symbol = fimg;
         }
         else{
-            //node.symbol="image://http://d.lanrentuku.com/down/png/1101/paradise_fruit/apple512.png";
         }
-        //node.symbol = "image://http://d.lanrentuku.com/down/png/1101/paradise_fruit/apple512.png";
         node.value = node.attributes.nodenumber;
         node.symbolSize /= 1.5;
         node.label = {
