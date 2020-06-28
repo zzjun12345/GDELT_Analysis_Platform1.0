@@ -143,6 +143,7 @@ html {
     height: 510px;
     width: 1000px;
     float: left;
+    z-index: 0;
 }
 #analysis .anawrapper .content_wrapper .other_charts .row2 #anachart4{
     height: 510px;
@@ -237,16 +238,23 @@ html {
 }  */
 
 #attitudechart{
-    height:500px;
+    height:450px;
     width:550px
 }
-#gexfgraph{
+.gexfgraph{
     height:1000px;
     width:920px
+}
+.gexfgraph1 .gexfgraph2 .gexfgraph3{
+    position: absolute;
 }
 .p1{
     font-size:16px;
     text-align: center;
+}
+.p2{
+    height:20px;
+    width:500px;
 }
 .p11{
     font-size:16px;
@@ -258,7 +266,54 @@ html {
 }
 .div3{
     width:500px;
-    height:550px;
+    height:480px;
     overflow-y: auto;
     left:100px;
+}
+#gexflbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowleft.png);
+}
+#gexfrbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowright.png);
+}
+#attitudelbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowleft.png);
+    z-index: 100;
+}
+#attituderbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowright.png);
+    z-index: 100;
+}
+#sortlbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowleft.png);
+    z-index: 100;
+}
+#sortrbtn{
+    height:35px;
+    width:35px;
+    background: url(../imgs/arrowright.png);
+    z-index: 100;
+}
+#gexfname{
+    font-size: x-large;
+    text-align: center;
+    
+}
+#attitudename{
+    font-size: x-large;
+    text-align: center;
+}
+#sortname{
+    font-size: x-large;
+    text-align: center;
 }
