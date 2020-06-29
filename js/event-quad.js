@@ -165,6 +165,11 @@ tooltip: {
     }
 }
 },
+title: {
+    text: 'GDELT单日事件类型统计',
+    subtext: '',
+    left: 'center'
+},
 xAxis: [
 {
     type: 'category',
