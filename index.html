@@ -75,6 +75,11 @@
             <input size="16" type="text" value="2020-04-01" id='time' readonly>
             <span class="add-on"><i class="icon-th"></i></span>
         </div>
+        <span class="input-group-btn">
+            <button class="btn btn-default btn1" type="button" onclick="statistic()">
+                <strong>统计</strong>
+            </button>
+        </span>
     </div><!-- /input-group -->
     <button class="btn btn-default btn1" type="button" onclick="statistic()" style="position: absolute;top: 10px;left: 1200px;">
         <strong>统计</strong>
@@ -218,6 +223,8 @@
                                 </div>
                             </div>
                                 <div id="attitudechart"></div>
+                                <button id='attitudelbtn' onclick=attlbtnclick()></button>
+                                <button id='attituderbtn' onclick=attrbtnclick()></button>
                         </div>
                         <div id="anachart2">
                             <div class="chartheader">
@@ -242,6 +249,8 @@
                                 <p class="p2" id="z9"></p>
                                 <p class="p2" id="z10"></p>
                             </div>
+                            <button id='sortlbtn' onclick=sortlbtnclick()></button>
+                            <button id='sortrbtn' onclick=sortrbtnclick()></button>
                         </div>
                     </div>
                     <div class="row2">
