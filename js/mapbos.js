@@ -359,8 +359,8 @@ var url2='http://localhost:8080/geoserver/Gdelt/ows?service=WFS&version=1.0.0&re
        }
        $.mask_fullscreen()
        $.ajax({
-        url:url2+"'"+time[0]+time[1]+time[2]+"'",
-        //url:'json/features.json',
+        //url:url2+"'"+time[0]+time[1]+time[2]+"'",
+        url:'json/features.json',
         type: "GET",
         dataType: "json", 
         success:function(data){
